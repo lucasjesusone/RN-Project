@@ -13,15 +13,14 @@ export default function App() {
     Montserrat_500Medium,
     Montserrat_700Bold
   });
- 
- 
+    
+      return (
+        <>
+        <StatusBar style="light" backgroundColor="#000"  translucent={false} />
+         <Routes/>
+         </>
+       );
+     }
+    
+    
   
- 
-  
-  return (
-   <>
-   <StatusBar style="light" backgroundColor="#000"  translucent={false} />
-    <Routes/>
-    </>
-  );
-}

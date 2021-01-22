@@ -22,6 +22,7 @@ function Routes() {
                     headerTitleStyle:{
                         fontFamily: 'Montserrat_700Bold'
                     },
+                    
 
                 headerRight: () => (
                     <TouchableOpacity style={{ marginRight: 15 }} >
@@ -34,7 +35,25 @@ function Routes() {
                 )
                 }} 
                 />
-                <Stack.Screen name="detail" component={Detail} />
+                <Stack.Screen 
+                name="detail" 
+                component={Detail}
+                options={{
+                    title: 'DETALHES',
+                    headerTitleStyle:{
+                        fontFamily: 'Montserrat_700Bold'
+                    },
+                    headerRight: () => (
+                        <TouchableOpacity style={{ marginRight: 15 }} >
+                            <Feather
+                            name="shopping-bag"
+                            size={24}
+                            color='black'
+                            />
+                        </TouchableOpacity>
+                    )}} 
+                
+                />
             </Stack.Navigator>
         </NavigationContainer>
     )

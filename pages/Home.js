@@ -2,15 +2,20 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { ScrollView, TextInput } from 'react-native-gesture-handler'
 import { Feather } from '@expo/vector-icons'
+import { useNavigation } from '@react-navigation/native'
 
-import New from './components/New'
-
+import Home1 from './components/Home1'
+import Home2 from './components/Home2'
+import Home3 from './components/Home3'
 
 export default function Home() {
- return (
+    const navigation = useNavigation();
+
+
+  return (
    <ScrollView 
   showsVerticalScrollIndicator={false}
-  style={{backgroundColor:'#FFF',  }}
+  style={{backgroundColor:'#FFF'}}
    >
      <View style={styles.header}>
        <View style={styles.inputArea}>
@@ -27,13 +32,29 @@ export default function Home() {
       </View>
    
     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15, }} >
-      <New
+      <Home1
         cover={require('../pages/assets/house1.jpg')}
         name='Casa de Praia'
-        description='Casa nova a uma quadra do mar'
+        description='Casa nova a uma quadra do mar e segurança reforçada,
+        
+        Diárias a partir de'
+        onPress={() => navigation.navigate('detail')}
+      />
+      
+     
+      <Home2
+        cover={require('../pages/assets/house2.jpg')}
+        name='Rancho Vila Maria '
+        description='Casa com excelente localização'
         onPress={() => {}}
       />
 
+      <Home3
+        cover={require('../pages/assets/house3.jpg')}
+        name='Casa Alphaville'
+        description='Casa com excelente localização'
+        onPress={() => {}}
+      />
     </ScrollView>
    
    </ScrollView>
@@ -70,6 +91,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     width: '90%'
   },
+
 
   contentNew: {
     flexDirection: 'row',
