@@ -27,7 +27,7 @@ export default function Home3(props) {
 
         <View style={styles.footer} >
             <View style={{width: '80%'}} >
-                <Text style={styles.price}>R$ 1.500,00  </Text>
+                <Text style={styles.price}>R$ 30.500</Text>
             </View>
             <View style={{ width: '20%' }}>
                 <Ionicons name='ios-add-circle' size={24} color='black'></Ionicons>

@@ -3,7 +3,7 @@ import { View, Text, Touchable, StyleSheet, Image } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import { Ionicons } from '@expo/vector-icons'
 
-export default function Home2(props) {
+export default function Home4(props) {
  return (
    <TouchableOpacity onPress={props.onPress} style={styles.container}>
        <Image
@@ -17,7 +17,7 @@ export default function Home2(props) {
         <View style={styles.dot} >
         </View>
         
-        <Text style={styles.badge}>Novo</Text> 
+        <Text style={styles.badge}>Usado</Text> 
 
         </View>
 
@@ -27,7 +27,7 @@ export default function Home2(props) {
 
         <View style={styles.footer} >
             <View style={{width: '80%'}} >
-                <Text style={styles.price}>R$ 3.000,00</Text>
+                <Text style={styles.price}>R$ 11.500</Text>
             </View>
             <View style={{ width: '20%' }}>
                 <Ionicons name='ios-add-circle' size={24} color='black'></Ionicons>

@@ -4,9 +4,12 @@ import { ScrollView, TextInput } from 'react-native-gesture-handler'
 import { Feather } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native'
 
-import Home1 from './components/Home1'
-import Home2 from './components/Home2'
-import Home3 from './components/Home3'
+import Carro1 from './components/Carro1'
+import Carro2 from './components/Carro2'
+import Carro3 from './components/Carro3'
+import Carro4 from './components/Carro4'
+import Carro5 from './components/Carro5'
+import Carro6 from './components/Carro6'
 
 export default function Home() {
     const navigation = useNavigation();
@@ -32,27 +35,46 @@ export default function Home() {
       </View>
    
     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15, }} >
-      <Home1
-        cover={require('../pages/assets/house1.jpg')}
-        name='Casa de Praia'
-        description='Casa nova a uma quadra do mar e segurança reforçada,
-        
-        Diárias a partir de'
+      <Carro1
+        cover={require('../pages/assets/carro1.jpg')}
+        name='VW SAVEIRO'
+        description='CARRO 1.6 MI TROOPER CE 8V FLEX 2P MANUAL G.V'
         onPress={() => navigation.navigate('detail')}
       />
       
      
-      <Home2
-        cover={require('../pages/assets/house2.jpg')}
-        name='Rancho Vila Maria '
-        description='Casa com excelente localização'
+      <Carro2
+        cover={require('../pages/assets/carro2.jpg')}
+        name='FORD FUSION'
+        description='2.0 TITANIUM FWD 16V GASOLINA 4P AUTOMÁTICO'
         onPress={() => {}}
       />
 
-      <Home3
-        cover={require('../pages/assets/house3.jpg')}
-        name='Casa Alphaville'
-        description='Casa com excelente localização'
+      <Carro3
+        cover={require('../pages/assets/carro3.jpg')}
+        name='CHEVROLET ONIX'
+        description='1.4 MPFI LTZ 8V FLEX 4P MANUAL'
+        onPress={() => {}}
+      />
+
+      <Carro4
+        cover={require('../pages/assets/carro4.jpg')}
+        name='FIAT UNO'
+        description='1.0 MPI MILLE WAY ECONOMY 8V FLEX 4P MANUAL'
+        onPress={() => {}}
+      />
+
+      <Carro5
+        cover={require('../pages/assets/carro5.jpg')}
+        name='CITROËN C3'
+        description='1.4 I GLX 8V FLEX 4P MANUAL'
+        onPress={() => {}}
+      />
+
+      <Carro6
+        cover={require('../pages/assets/carro6.jpg')}
+        name='LEXUS ES 350'
+        description='3.5 V6 GASOLINA 4P AUTOMÁTICO'
         onPress={() => {}}
       />
     </ScrollView>
