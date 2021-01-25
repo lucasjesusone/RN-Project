@@ -4,12 +4,9 @@ import { ScrollView, TextInput } from 'react-native-gesture-handler'
 import { Feather } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native'
 
-import Carro1 from './components/Carro1'
-import Carro2 from './components/Carro2'
-import Carro3 from './components/Carro3'
-import Carro4 from './components/Carro4'
-import Carro5 from './components/Carro5'
-import Carro6 from './components/Carro6'
+import CarrosMenu from './components/CarrosMenu'
+import Cars from './components/Cars'
+import Recommend from './components/Recommend'
 
 export default function Home() {
     const navigation = useNavigation();
@@ -35,51 +32,121 @@ export default function Home() {
       </View>
    
     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15, }} >
-      <Carro1
+      <CarrosMenu
         cover={require('../pages/assets/carro1.jpg')}
         name='VW SAVEIRO'
         description='CARRO 1.6 MI TROOPER CE 8V FLEX 2P MANUAL G.V'
+        condition='USADO'
+        price='R$ 20.990'
+        year='Ano: 2009/2010'
         onPress={() => navigation.navigate('detail')}
       />
       
      
-      <Carro2
+      <CarrosMenu
         cover={require('../pages/assets/carro2.jpg')}
         name='FORD FUSION'
         description='2.0 TITANIUM FWD 16V GASOLINA 4P AUTOMÁTICO'
+        condition='Semi-Novo'
+        price='R$ 100.000'
+        year='Ano: 2017/2018'
         onPress={() => navigation.navigate('detail') }
       />
 
-      <Carro3
+      <CarrosMenu
         cover={require('../pages/assets/carro3.jpg')}
         name='CHEVROLET ONIX'
         description='1.4 MPFI LTZ 8V FLEX 4P MANUAL'
+        condition='USADO'
+        price='R$ 30.500'
+        year='Ano: 2014/2015'
         onPress={() => navigation.navigate('detail')}
       />
 
-      <Carro4
+      <CarrosMenu
         cover={require('../pages/assets/carro4.jpg')}
         name='FIAT UNO'
         description='1.0 MPI MILLE WAY ECONOMY 8V FLEX 4P MANUAL'
+        condition='USADO'
+        price='R$ 11.500'
+        year='Ano: 2008/2009'
         onPress={() => navigation.navigate('detail')}
       />
 
-      <Carro5
+      <CarrosMenu
         cover={require('../pages/assets/carro5.jpg')}
         name='CITROËN C3'
-        description='1.4 I GLX 8V FLEX 4P MANUAL'
+        description='1.4 I GLX 8V FLEX 4P MANUAL'condition='USADO'
+        price='R$ 18.500'
+        year='Ano: 2011/2012'
         onPress={() => navigation.navigate('detail')}
       />
 
-      <Carro6
+      <CarrosMenu
         cover={require('../pages/assets/carro6.jpg')}
         name='LEXUS ES 350'
         description='3.5 V6 GASOLINA 4P AUTOMÁTICO'
+        condition='USADO'
+        price='R$ 124.400'
+        year='Ano: 2016/2017'
         onPress={() => navigation.navigate('detail')}
       />
     </ScrollView>
+      
+      
+      <View style={{ flexDirection: 'row', marginBottom: 10, alignItems: 'center' }} >
+        <Text style={[styles.title, { marginTop: 20 }]}>Próximo de você</Text>
+      </View>
+
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15,}}>
+        <Cars
+        cover={require('./assets/carro4.jpg')}
+        description='Sei lá'
+        price='R$ 1000'
+        />
+        <Cars
+        cover={require('./assets/carro4.jpg')}
+        description='Sei lá'
+        price='R$ 1000'
+        />
+        <Cars
+        cover={require('./assets/carro4.jpg')}
+        description='Sei lá'
+        price='R$ 1000'
+        />
+        
+      </ScrollView>
+
+      <Text style={[styles.title, { marginTop: 20 }]}>
+        Dica do dia
+      </Text>
+
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15}} >
+        <Recommend
+        cover={require('./assets/carro5.jpg')}
+        name="Veículo SP"
+        offer="25%"
+        />
+        <Recommend
+        cover={require('./assets/carro5.jpg')}
+        name="Veículo SP"
+        offer="25%"
+        />
+        <Recommend
+        cover={require('./assets/carro5.jpg')}
+        name="Veículo SP"
+        offer="25%"
+        />
+         <Recommend
+        cover={require('./assets/carro5.jpg')}
+        name="Veículo SP"
+        offer="25%"
+        />
+      </ScrollView>
    
    </ScrollView>
+
+
 
   );
 }
