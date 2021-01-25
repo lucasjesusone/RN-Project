@@ -18,7 +18,7 @@ function Routes() {
                 name="home" 
                 component={Home}
                 options={{
-                    title: 'ALUGUE',
+                    title: 'COMPRE SEU VEÍCULO',
                     headerTitleStyle:{
                         fontFamily: 'Montserrat_700Bold'
                     },
@@ -39,7 +39,7 @@ function Routes() {
                 name="detail" 
                 component={Detail}
                 options={{
-                    title: 'DETALHES',
+                    title: 'DETALHES DO VEICULO',
                     headerTitleStyle:{
                         fontFamily: 'Montserrat_700Bold'
                     },

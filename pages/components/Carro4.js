@@ -28,6 +28,7 @@ export default function Home4(props) {
         <View style={styles.footer} >
             <View style={{width: '80%'}} >
                 <Text style={styles.price}>R$ 11.500</Text>
+                <Text style={styles.model}>Ano: 2008/2009 </Text>
             </View>
             <View style={{ width: '20%' }}>
                 <Ionicons name='ios-add-circle' size={24} color='black'></Ionicons>
@@ -91,13 +92,19 @@ const styles = StyleSheet.create({
         marginTop: 5,
         flexDirection: 'row',
         alignItems: 'center',
-        width: '100%'
+        width: '100%',
+        
     },
     price: {
         fontFamily: 'montSerrat_700Bold',
         fontWeight: 'bold',
         fontSize: 15,
       
+        
+    },
+    model: {
+        fontSize: 15,
+        fontWeight: 'bold',
         
     }
 })

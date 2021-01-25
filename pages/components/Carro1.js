@@ -17,7 +17,7 @@ export default function Home1(props) {
         <View style={styles.dot} >
         </View>
         
-        <Text style={styles.badge}>USADO</Text> 
+        <Text style={styles.badge}>Usado</Text> 
 
         </View>
 
@@ -92,7 +92,8 @@ const styles = StyleSheet.create({
         marginTop: 5,
         flexDirection: 'row',
         alignItems: 'center',
-        width: '100%'
+        width: '100%',
+        
     },
     price: {
         fontFamily: 'montSerrat_700Bold',

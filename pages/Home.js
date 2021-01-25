@@ -47,35 +47,35 @@ export default function Home() {
         cover={require('../pages/assets/carro2.jpg')}
         name='FORD FUSION'
         description='2.0 TITANIUM FWD 16V GASOLINA 4P AUTOMÁTICO'
-        onPress={() => {}}
+        onPress={() => navigation.navigate('detail') }
       />
 
       <Carro3
         cover={require('../pages/assets/carro3.jpg')}
         name='CHEVROLET ONIX'
         description='1.4 MPFI LTZ 8V FLEX 4P MANUAL'
-        onPress={() => {}}
+        onPress={() => navigation.navigate('detail')}
       />
 
       <Carro4
         cover={require('../pages/assets/carro4.jpg')}
         name='FIAT UNO'
         description='1.0 MPI MILLE WAY ECONOMY 8V FLEX 4P MANUAL'
-        onPress={() => {}}
+        onPress={() => navigation.navigate('detail')}
       />
 
       <Carro5
         cover={require('../pages/assets/carro5.jpg')}
         name='CITROËN C3'
         description='1.4 I GLX 8V FLEX 4P MANUAL'
-        onPress={() => {}}
+        onPress={() => navigation.navigate('detail')}
       />
 
       <Carro6
         cover={require('../pages/assets/carro6.jpg')}
         name='LEXUS ES 350'
         description='3.5 V6 GASOLINA 4P AUTOMÁTICO'
-        onPress={() => {}}
+        onPress={() => navigation.navigate('detail')}
       />
     </ScrollView>
    
