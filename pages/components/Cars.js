@@ -12,6 +12,7 @@ export default function Cars(props) {
            </View>
 
        <View  style={styles.content}>
+           <Text style={styles.nameCar}>{props.nameCar}</Text>
            <Text style={styles.description}>{props.description}</Text>
            <Text style={styles.price}>{props.price}</Text>
        </View>
@@ -51,5 +52,11 @@ const styles = StyleSheet.create({
     price:{
         fontSize: 12,
         fontFamily: 'Montserrat_700Bold'
-    }
+    },
+    nameCar: {
+        fontSize: 9,
+        fontFamily: 'Montserrat_500Medium',
+        fontWeight: 'bold',
+        
+        }
 })

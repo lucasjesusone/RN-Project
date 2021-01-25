@@ -11,6 +11,9 @@ export default function Recommend(props) {
        <Text style={[styles.house, styles.shadow]}>
            {props.name}
        </Text>
+       <Text style={styles.year}>
+            {props.year}
+       </Text>
 
        <Text style={[styles.offer, styles.shadow]}>
            {props.offer} OFF
@@ -45,5 +48,10 @@ const styles = StyleSheet.create({
         textShadowOffset: { width: 1, height: 2 },
         textShadowRadius: 3,
         textShadowColor: '#000'
-    }
+    },
+    year: {
+        fontSize: 12,
+        fontFamily: 'Montserrat_700Bold',
+        color: '#FFF'
+    },
 })

@@ -100,47 +100,59 @@ export default function Home() {
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15,}}>
         <Cars
-        cover={require('./assets/carro4.jpg')}
-        description='Sei lá'
-        price='R$ 1000'
+        cover={require('./assets/nextme.jpg')}
+        nameCar ='TOYOTA HILUX SW4'
+        description='3.0 SRV 4X4 16V TURBO INTERCOOLER DIESEL 4P AUTOMÁTICO'
+        price='R$ 145.000'
         />
         <Cars
-        cover={require('./assets/carro4.jpg')}
-        description='Sei lá'
-        price='R$ 1000'
+        cover={require('./assets/nextme1.jpg')}
+        nameCar='VOLKSWAGEN AMAROK'
+        description='3.0 V6 TDI DIESEL HIGHLINE CD 4MOTION AUTOMÁTICO'
+        price='R$ 182.900'
         />
         <Cars
-        cover={require('./assets/carro4.jpg')}
-        description='Sei lá'
-        price='R$ 1000'
+        cover={require('./assets/nextme2.jpg')}
+        nameCar='CHEVROLET S10'
+        description='2.4 LS 4X2 CD 8V FLEX 4P MANUAL'
+        price='R$ 72.900'
         />
-        
+        <Cars
+        cover={require('./assets/nextme3.jpg')}
+        nameCar='MITSUBISHI PAJERO FULL'
+        description={'3.8 HPE 4X4 V6 24V GASOLINA 4P AUTOMÁTICO'}
+        price='R$ 120.900'
+        />
       </ScrollView>
 
       <Text style={[styles.title, { marginTop: 20 }]}>
-        Dica do dia
+        Ofertas do Dia
       </Text>
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15}} >
         <Recommend
-        cover={require('./assets/carro5.jpg')}
-        name="Veículo SP"
+        cover={require('./assets/offer.jpg')}
+        name="HONDA CIVIC"
+        year='2018/2018'
+        offer="12%"
+        />
+        <Recommend
+        cover={require('./assets/offer1.jpg')}
+        name="BMW X3"
+        year='2017/2018'
         offer="25%"
         />
         <Recommend
-        cover={require('./assets/carro5.jpg')}
-        name="Veículo SP"
-        offer="25%"
-        />
-        <Recommend
-        cover={require('./assets/carro5.jpg')}
-        name="Veículo SP"
-        offer="25%"
+        cover={require('./assets/offer2.jpg')}
+        name="AUDI A3"
+        year='2018/2018'
+        offer="20%"
         />
          <Recommend
-        cover={require('./assets/carro5.jpg')}
-        name="Veículo SP"
-        offer="25%"
+        cover={require('./assets/offer3.jpg')}
+        name="PORSCHE CAYENNE "
+        year='2015/2016'
+        offer="9%"
         />
       </ScrollView>
    
