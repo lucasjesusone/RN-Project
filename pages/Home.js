@@ -8,6 +8,7 @@ import CarrosMenu from './components/CarrosMenu'
 import Cars from './components/Cars'
 import Recommend from './components/Recommend'
 
+
 export default function Home() {
     const navigation = useNavigation();
 
@@ -40,6 +41,7 @@ export default function Home() {
         price='R$ 20.990'
         year='Ano: 2009/2010'
         onPress={() => navigation.navigate('detail')}
+        
       />
       
      
@@ -163,7 +165,7 @@ export default function Home() {
         onPress={() => navigation.navigate('detail')}
         />
       </ScrollView>
-   
+       
    </ScrollView>
 
 

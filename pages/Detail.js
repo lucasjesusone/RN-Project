@@ -5,17 +5,12 @@ import { Scrollview } from 'react-native-gesture-handler'
 
 import SwiperComponent from './components/Swiper'
 
-export default function Home() {
+export default function Detail() {
  return (
   <View style={styles.container} >
     <View style={styles.swiperContent}>
-      <SwiperComponent/>
-    </View>
-
-    <View style={styles.headerContent}>
-      <View style={{width: '35%'}}>
-        <Text>Carro</Text>
-      </View>
+      <SwiperComponent
+      />
     </View>
   </View>
   );

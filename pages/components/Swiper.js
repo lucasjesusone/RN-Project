@@ -1,57 +1,57 @@
 import React from 'react';
-import { View, StyleSheet, Text, Image } from 'react-native';
+import { View, StyleSheet, Image } from 'react-native';
 import Swiper from 'react-native-swiper'
 
-
-export default function SwiperComponent() {
+export default function SwiperComponent(props) {
  return (
-   <Swiper
-   style={styles.wrapper}
-   dotStyle={{
-       backgroundColor: '#000',
-       borderColor: '#000',
-       borderWidth: 1,
-       width: 10,
-       height: 10,
-       borderRadius: 10
-   }}
-   activeDotColor='#FFF'
-   activeDotStyle={{
-       borderColor: '#000',
-       borderWidth: 1,
-       width: 10,
-       height: 10,
-       borderRadius: 10
-   }}
-   >
-       <View style={styles.slide}>
-           <Image
-           source={require('../assets/offer2.jpg')}
-           style={{width: '100%', height: 400}}
-           />
-       </View>
+    <Swiper
+     style={styles.wrapper}
+     dotStyle={{
+         backgroundColor: '#000',
+         borderColor: '#000',
+         borderWidth: 1,
+         width: 10,
+         height: 10,
+         borderRadius: 10
+     }}
+     activeDotColor='#FFF'
+     activeDotStyle={{
+         borderColor: '#000',
+         borderWidth:  1,
+         width: 10,
+         height: 10,
+         borderRadius: 10,
+     }}
+     >
+        <View style={styles.slide}>
+            <Image
+            source={require('../assets/offer3.jpg')}
+            style={{ width: '100%', height: 400 }}
+            />
+        </View>
 
-       <View style={styles.slide}>
-           <Image
-           source={require('../assets/offer2.jpg')}
-           style={{width: '100%', height: 400}}
-           />
-       </View>
+        <View style={styles.slide}>
+            <Image
+            source={require('../assets/offer3.jpg')}
+            style={{ width: '100%', height: 400 }}
+            />
+        </View>
 
-       <View style={styles.slide}>
-           <Image
-           source={require('../assets/offer2.jpg')}
-           style={{width: '100%', height: 400}}
-           />
-       </View>
-   </Swiper>
-   
+        <View style={styles.slide}>
+            <Image
+            source={require('../assets/offer3.jpg')}
+            style={{ width: '100%', height: 400 }}
+            />
+        </View>
+
+        
+      
+     </Swiper>
   );
 }
 
-
 const styles = StyleSheet.create({
-    wrapper: {
+    wrapper:{
 
     },
     slide: {
@@ -60,4 +60,4 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#FFF'
     }
-});
+})

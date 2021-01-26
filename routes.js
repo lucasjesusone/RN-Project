@@ -7,6 +7,7 @@ import { TouchableOpacity } from 'react-native'
 import Home from './pages/Home'
 import Detail from './pages/Detail'
 
+
 const Stack = createStackNavigator();
 
 
@@ -54,6 +55,7 @@ function Routes() {
                     )}} 
                 
                 />
+               
             </Stack.Navigator>
         </NavigationContainer>
     )
