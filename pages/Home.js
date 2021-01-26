@@ -47,10 +47,10 @@ export default function Home() {
         cover={require('../pages/assets/carro2.jpg')}
         name='FORD FUSION'
         description='2.0 TITANIUM FWD 16V GASOLINA 4P AUTOMÁTICO'
-        condition='Semi-Novo'
+        condition='SEMI-NOVO'
         price='R$ 100.000'
         year='Ano: 2017/2018'
-        onPress={() => navigation.navigate('detail') }
+        onPress={() => navigation.navigate('detail')}
       />
 
       <CarrosMenu
@@ -104,24 +104,28 @@ export default function Home() {
         nameCar ='TOYOTA HILUX SW4'
         description='3.0 SRV 4X4 16V TURBO INTERCOOLER DIESEL 4P AUTOMÁTICO'
         price='R$ 145.000'
+        onPress={() => navigation.navigate('detail') }
         />
         <Cars
         cover={require('./assets/nextme1.jpg')}
         nameCar='VOLKSWAGEN AMAROK'
         description='3.0 V6 TDI DIESEL HIGHLINE CD 4MOTION AUTOMÁTICO'
         price='R$ 182.900'
+        onPress={() => navigation.navigate('detail')}
         />
         <Cars
         cover={require('./assets/nextme2.jpg')}
         nameCar='CHEVROLET S10'
         description='2.4 LS 4X2 CD 8V FLEX 4P MANUAL'
         price='R$ 72.900'
+        onPress={() => navigation.navigate('detail')}
         />
         <Cars
         cover={require('./assets/nextme3.jpg')}
         nameCar='MITSUBISHI PAJERO FULL'
         description={'3.8 HPE 4X4 V6 24V GASOLINA 4P AUTOMÁTICO'}
         price='R$ 120.900'
+        onPress={() => navigation.navigate('detail')}
         />
       </ScrollView>
 
@@ -135,24 +139,28 @@ export default function Home() {
         name="HONDA CIVIC"
         year='2018/2018'
         offer="12%"
+        onPress={() => navigation.navigate('detail')}
         />
         <Recommend
         cover={require('./assets/offer1.jpg')}
         name="BMW X3"
         year='2017/2018'
         offer="25%"
+        onPress={() => navigation.navigate('detail')}
         />
         <Recommend
         cover={require('./assets/offer2.jpg')}
         name="AUDI A3"
         year='2018/2018'
         offer="20%"
+        onPress={() => navigation.navigate('detail')}
         />
          <Recommend
         cover={require('./assets/offer3.jpg')}
         name="PORSCHE CAYENNE "
         year='2015/2016'
         offer="9%"
+        onPress={() => navigation.navigate('detail')}
         />
       </ScrollView>
    

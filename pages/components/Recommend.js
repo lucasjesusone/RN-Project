@@ -1,8 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default function Recommend(props) {
  return (
+     <TouchableOpacity onPress={props.onPress}>
    <ImageBackground
    source={props.cover}
    style={styles.container}
@@ -19,6 +21,7 @@ export default function Recommend(props) {
            {props.offer} OFF
        </Text>
    </ImageBackground>
+   </TouchableOpacity>
   );
 }
 

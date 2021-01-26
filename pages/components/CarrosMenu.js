@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         backgroundColor: '#FFF',
         height: 300,
-        width: 200,
+        width: 230,
         elevation: 2,
         borderRadius: 10,
         padding: 15,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
     cover: {
-        width: 170,
+        width: 195,
         height: 110,
         borderRadius: 10,
     },
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
         marginVertical: 10,
     },
     title:{
-        fontFamily: 'montSerrat_700Bold',
+        fontFamily: 'Montserrat_700Bold',
         fontSize: 15,
         color: '#4f4a4a',
         
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     badge:{
         color: 'red',
         fontSize: 12,
-        fontFamily: 'montSerrat_400Medium',
+        fontFamily: 'Montserrat_500Medium',
         padding: 5,
         fontWeight: 'bold'
     },
@@ -96,15 +96,14 @@ const styles = StyleSheet.create({
         
     },
     price: {
-        fontFamily: 'montSerrat_700Bold',
+        fontFamily: 'Montserrat_700Bold',
         fontWeight: 'bold',
         fontSize: 15,
-        
+        marginTop: 15
         
     },
     model: {
         fontSize: 15,
-        fontWeight: 'bold',
-        
+        fontWeight: 'bold'
     }
 })

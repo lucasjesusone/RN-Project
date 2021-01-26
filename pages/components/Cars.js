@@ -1,9 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler'
 
 export default function Cars(props) {
  return (
-   <View style={styles.container} >
+   <TouchableOpacity onPress={props.onPress} style={styles.container} >
        <View>
            <Image
            source={props.cover}
@@ -16,7 +17,7 @@ export default function Cars(props) {
            <Text style={styles.description}>{props.description}</Text>
            <Text style={styles.price}>{props.price}</Text>
        </View>
-   </View>
+   </TouchableOpacity>
   );
 }
 
